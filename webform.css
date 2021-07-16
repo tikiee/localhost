@@ -1,0 +1,1715 @@
+/* Rabobank Quinity Webform Style Document */
+/* Authors:  Lennard Kager, Mel Moorman */
+/* Version: 1.0.1 */
+/* Date: 06-05-2015 */
+
+
+/* hiding messages - global attribute does not work in ie8 and below  */
+#qfs_form  div[hidden="hidden"] {
+    display: none;
+}
+
+
+
+
+/******* for ra_screen *******/
+
+/* larger p and table text */
+#pa_content #qfs_form p, #pa_content #qfs_form table {
+    font-size: 15px;
+}
+
+
+#pa_content .values {
+    padding-left:0;
+    text-align:left
+}
+#pa_content #qfs_form input[type=checkbox] {
+    margin-top: 0px!important;
+}
+#pa_content #qfs_form label.label {
+    padding-left: 15px!important;
+}
+#pa_content #qfs_form {
+    padding:0
+}
+
+#pa_content #qfs_form select {
+    padding-right: 25px;
+}
+
+#qfs_form ul li {
+    list-style:none
+}
+
+#pa_content #qfs_form .formDialogueHeader {
+    padding-left:15px
+}
+
+#pa_content > #qfs_form body, #pa_content > #qfs_form p, #pa_content > #qfs_form table ,#pa_content > #qfs_form label, #pa_content .labels, #pa_content .informationContent, #pa_content .informationTitle, #pa_content .formScreenIntroduction, #pa_content .formScreenInstruction, #pa_content .qfs_formDisclaimer, #pa_content .formDialogueFooter {
+    font-size:15px!important;
+}
+
+#pa_content label,#pa_content .value {
+    font-size:15px
+}
+
+#pa_content #qfs_form .formDialogueTitle {
+    padding-left:12px;
+    font-size:30px
+}
+
+#pa_content #qfs_form .formScreenIntroduction {
+    padding-left:0
+}
+
+body {
+    text-align:left!important
+}
+
+#pa_content ul li {
+    list-style:none
+}
+
+#pa_content #qfs_form ol.steps > li {
+    font-size:15px
+}
+
+#pa_content > #qfs_form button.ui-datepicker-trigger:after {
+    padding-right:0;
+    padding-bottom:0
+}
+
+#pa_content #qfs_form ol li {
+    margin-left:0
+}
+
+#pa_content > #qfs_form button.ui-datepicker-trigger:hover:after {
+    padding-right:0;
+    padding-bottom:0
+}
+
+#pa_content #qfs_form button.ui-datepicker-trigger:after {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    top: 0px;
+    border-radius: 0px!important;
+}
+
+#pa_content #qfs_form textarea,#pa_content #qfs_form input[type="text"],#pa_content #qfs_form input[type="email"],#pa_content #qfs_form input[type="tel"],#pa_content #qfs_form input[type="time"],#pa_content #qfs_form input[type="number"],#pa_content #qfs_form input[type="password"] {
+    width:200px
+}
+
+#pa_content #qfs_form input[size="1"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="2"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="3"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="4"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="5"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="6"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="7"] {
+    width:60px
+}
+
+#pa_content #qfs_form input[size="8"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="9"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="10"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="11"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="12"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="13"] {
+    width:100px
+}
+
+#pa_content #qfs_form input[size="14"] {
+    width:100px
+}
+
+#qfs_form button.ui-datepicker-trigger:hover:after,#qfs_form button.ui-datepicker-trigger:focus:after {
+    background-image:url(images/datepicker-hover.svg);
+    background-repeat:no-repeat
+}
+
+/************* END ra_screen **************/
+
+/* overall */
+#qfs_form * {
+    font-family:Myriad Regular,Verdana,Sans Serif;
+    text-decoration:none;
+    -webkit-font-smoothing:antialiased
+}
+
+#qfs_form {
+    color: #333;
+    margin-top: 1.5em;
+    position:relative;
+    padding-left: 1em;
+}
+
+#qfs_form p {
+    font-size:1em;
+    padding-right:.5em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    color:#666
+}
+
+
+/* overwrite padding from generic s14 .content class */
+#qfs_form .content {
+    padding:0;
+    overflow:visible
+}
+
+/* overwrite s14 table styling*/
+
+#qfs_form .content table tr td, .s14-block .content table tr th {
+    border: 0;
+    border-top: none;
+    padding: 0;
+    text-align: inherit;
+    min-width: 0;
+}
+
+#qfs_form td[colspan="2"] {
+    font-weight: bold;
+    color: #009;
+}
+
+/* states div.entry, label.label, span.value*/
+#qfs_form div.entry.nonApplicable {
+    display: none;
+}
+
+#qfs_form div.entry.Applicable {
+    display: block;
+}
+
+.editable {}
+/* generic form links like "print" */
+#qfs_form .formScreenLinks {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* print link styling */
+#qfs_form #qfs_printScreenLink_0:before {
+    content: "\f1cb";
+    font-family: "senses-icons";
+    font-size: 1.3em;
+    margin-right: .3em;
+    padding: .15em;
+    top: 0.1em;
+    position: relative;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+
+/* information & texts */
+#qfs_form b {
+    font-weight: lighter;
+}
+
+#qfs_form label {
+    color:#666
+}
+
+#qfs_form fieldset {
+    float: left;
+}
+
+#qfs_form .labels {
+    padding-right:.5em;
+}
+#qfs_form span.value.checkbox > span.textAfterInputField {
+    font-size: .9em;
+}
+
+#qfs_form span.textAfterInputField {
+    padding-left:.5em
+}
+
+#qfs_form span.textBeforeInputField,#qfs_form span.textAfterInputField {
+    color:#666;
+    float: left;
+}
+
+#qfs_form span.textBeforeInputField {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#qfs_form .labels,#qfs_form .informationContent {
+    font-size:1em;
+    color:#666;
+    line-height:1.4em;
+    min-width: 30%;
+    margin-top:.4em;
+}
+/* table */
+#qfs_form table {
+    color:#666!important;
+    width: 98%;
+}
+
+#qfs_form .content table tr td,.s14-block .content table tr th {
+    border:0;
+    border-top:none;
+    text-align:inherit
+}
+
+#qfs_form table tr:last-child td {
+    border-bottom:1px solid #e3e3e3
+}
+
+#qfs_form table tr td,.s14-block .content table tr th {
+    border-top:1px solid #e3e3e3;
+    padding:.5em;
+    text-align:center;
+    min-width:4em
+}
+
+#qfs_form table tr:first-child {
+    border-top:1px solid transparent
+}
+/* entry groups */
+#qfs_form .entry {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-bottom: .5em;
+}
+/* label + checkbox on same row */
+#qfs_form span.checkbox {
+    float: left;
+    padding-left: .5em;
+    width: 100%;
+}
+
+#qfs_form span.checkbox label {
+    width: 95%;
+}
+
+
+/* Form Headings*/
+#qfs_form .formDialogueTitle {
+    font-family: Myriad Light;
+    font-size:2.2em;
+    color:#009;
+    float:left;
+    padding-left: .1em;
+    width:100%;
+    position: relative;
+}
+
+#qfs_form .entryGroupHeader {
+    padding-top:.3em
+}
+
+#qfs_form .formDialogueHeader {
+    color:#333;
+    width:100%;
+    float:left;
+    padding-top:.3em;
+    padding-bottom:.3em;
+    padding-left: .1em;
+}
+
+#qfs_form .formScreenIntroduction {
+    width:100%;
+    float:left;
+    padding-left: .3em;
+}
+
+#qfs_form .formScreenInstruction {
+    display: none;
+}
+
+#qfs_form .handle {
+    font-size:1.25em;
+    color:#009;
+    padding-bottom:.3em;
+    padding-top:.3em
+}
+
+#qfs_form .formScreenName {
+    float:left
+}
+
+#qfs_form .formScreenNumber {
+    float:right
+}
+
+#qfs_form .accordion > li > .handle {
+    display: none;
+}
+
+.quinity ul.accordion > li {
+    list-style-type:none
+}
+
+/* step indicated in top */
+#qfs_form .formSequenceMenu {
+    padding-left:0em
+}
+
+#qfs_form .formSequenceMenu .steps li {
+    padding-right:.7em;
+    float: left;
+    /*display: inline-block;*/
+}
+#qfs_form ol.steps {
+    list-style-type: none;
+    counter-reset: ol-counter;
+}
+#qfs_form ol.steps > li {
+    height: 2em;
+    margin-bottom: .5em;
+    /*cursor: pointer;*/
+}
+
+#qfs_form ol.steps > li > a {
+    cursor: text;
+}
+
+
+#qfs_form ol.steps > li > span:hover {
+    color: #fd6400;
+}
+#qfs_form div.formSequenceMenu > ol.steps > li > span {
+    color:white!important;
+}
+#qfs_form div.formSequenceMenu > ol.steps > li.optional {
+    display: none;
+}
+#qfs_form div.formSequenceMenu > ol.steps > li.active.optional, #qfs_form div.formSequenceMenu > ol.steps > li.performed.optional, #qfs_form div.formSequenceMenu > ol.steps > li.performed, #qfs_form div.formSequenceMenu > ol.steps > li.active {
+    display: block;
+}
+
+
+#qfs_form div.formSequenceMenu > ol.steps > li.active > span {
+    color:#FF6600!important;
+}
+
+#qfs_form div.formSequenceMenu > ol.steps > li.performed > a {
+    color:#999999!important;
+    cursor: pointer;
+}
+
+#qfs_form div.formSequenceMenu > ol.steps > li.performed:before {
+    color:#666666;
+    background-image: url('images/Icon_supercirkel.svg');
+    background-size: 1.6em;
+    background-repeat: no-repeat;
+}
+#qfs_form div.formSequenceMenu > ol.steps > li.active:before {
+    color:#ffffff;
+    background-image: url('images/Icon_supercirkel_SEL.svg');
+    background-size: 1.6em;
+    background-repeat: no-repeat;
+}
+#qfs_form ol.steps > li:before {
+    background-image: url('images/Icon_supercirkel_MO.svg');
+    background-size: 1.6em;
+    background-repeat: no-repeat;
+    margin-right: .5em;
+    font-weight:700;
+    padding-right:.5em;
+    color:white;
+    vertical-align: top;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: .55em;
+    padding-right: .65em;
+    content: counter(ol-counter);
+    counter-increment: ol-counter;
+}
+
+#qfs_form ol.steps >li:not(.optional):nth-child(10):before {
+    padding-top: .25em;
+    padding-left: .25em;
+}
+
+#qfs_form ol.steps > li > span {
+    display: none;
+}
+#qfs_form ol.steps > li.active > span {
+    display: inline-block;
+}
+
+#qfs_form ol.steps > li.performed, #qfs_form ol.steps > li.active {
+    display: list-item;
+}
+
+
+#qfs_form fieldset {
+    border:none;
+    width:100%
+}
+
+
+/* Buttons */
+#qfs_form button {
+    background:#fd6400;
+    border: 1px solid #fd6400;
+    color:#fff!important;
+    border-radius:7px/50%;
+    margin:.5em .5em .75em 0;
+    min-width:9em;
+    text-align:center;
+    text-decoration:none!important;
+    line-height:.4em;
+    padding:.8em;
+    display:inline-block;
+    cursor:pointer
+}
+
+#qfs_form .formButtons {
+    float: left;
+}
+
+/* previous + next */
+#qfs_form #qfs_buttonsBottomPrevious,#qfs_buttonsBottomNext {
+    margin-top:1em
+}
+
+/* previous */
+#qfs_form #qfs_buttonsBottomPrevious {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    color: #666!important;
+    background: #f7f7f7;
+    border: 1px solid #aaa;
+}
+#qfs_form #qfs_buttonsBottomPrevious.disabled {
+    background-color: #e3e3e3;
+    border: 1px solid #e3e3e3;
+    color: white!important;
+    cursor: default;
+}
+#qfs_form #qfs_buttonsBottomPrevious.disabled:hover {
+    background-color: #e3e3e3;
+    border: 1px solid #e3e3e3;
+    color: white!important;
+    cursor: default;
+}
+/* next */
+#qfs_form #qfs_buttonsBottomNext, #qfs_form #qfs_buttonsBottomSend {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+
+/* hide top button */
+button#buttonsBottomNextInvisible {
+    display: none;
+}
+
+#qfs_form button:hover {
+    color:#fff!important;
+    background:#cc5200;
+    border: 1px solid #cc5200
+}
+
+#qfs_form button#qfs_buttonsBottomPrevious:hover {
+    background: #eee;
+    border: 1px solid #999;
+    color: #666!important;
+}
+
+#qfs_form textarea {
+    height: 3em;
+}
+#qfs_form input:focus,#qfs_form textarea:focus {
+    outline:none
+}
+
+#qfs_form legend {
+    font-size:1.25em;
+    color:#fd6400
+}
+
+/*input generic*/
+#qfs_form textarea,#qfs_form input[type="text"],#qfs_form input[type="email"],#qfs_form input[type="tel"],#qfs_form input[type="time"],#qfs_form input[type="number"],#qfs_form input[type="password"] {
+    border: 2px solid transparent;
+    border-radius: 2em/85%;
+    box-shadow:none;
+    border-bottom: 2px solid #aaa;
+    padding-left: .9em;
+    padding-bottom: 0.45em;
+    color:#666;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#qfs_form textarea,#qfs_form input[type="text"],#qfs_form input[type="email"],#qfs_form input[type="tel"],#qfs_form input[type="time"],#qfs_form input[type="number"],#qfs_form input[type="password"] {
+    width: 20em;
+}
+
+#qfs_form input[size="1"] {
+    width: 6em;
+}
+#qfs_form input[size="2"] {
+    width: 6em;
+}
+#qfs_form input[size="3"] {
+    width: 6em;
+}
+#qfs_form input[size="4"] {
+    width: 6em;
+}
+#qfs_form input[size="5"] {
+    width: 6em;
+}
+#qfs_form input[size="6"] {
+    width: 6em;
+}
+#qfs_form input[size="7"] {
+    width: 6em;
+}
+#qfs_form input[size="8"] {
+    width: 10em;
+}
+#qfs_form input[size="9"] {
+    width: 10em;
+}
+#qfs_form input[size="10"] {
+    width: 10em;
+}
+#qfs_form input[size="11"] {
+    width: 10em;
+}
+#qfs_form input[size="12"] {
+    width: 10em;
+}
+#qfs_form input[size="13"] {
+    width: 10em;
+}
+#qfs_form input[size="14"] {
+    width: 10em;
+}
+
+
+#qfs_form input.hasDatepicker {
+    border-bottom-right-radius:0;
+    width: 8em;
+}
+
+/* width of input field varies depending on size class on field*/
+#qfs_form input[size=1]
+
+/* input with datepicker */
+#qfs_form input.hasDatepicker {
+    border-bottom-right-radius:0
+}
+/* input text active */
+#qfs_form textarea:focus,#qfs_form input[type="text"]:focus,#qfs_form textarea:active,#qfs_form input[type="text"]:active {
+    color:#009
+}
+
+/* input focus */
+#qfs_form textarea:focus,input[type="text"]:focus,#qfs_form input[type="email"]:focus,#qfs_form input[type="tel"]:focus,#qfs_form input[type="time"]:focus,#qfs_form input[type="number"]:focus,#qfs_form input[type="password"]:focus {
+    color:#009
+}
+
+/*input mouseover*/
+#qfs_form textarea:hover, #qfs_form input:hover {
+    border-bottom:2px solid #009
+}
+
+/*input disabled*/
+#qfs_form textarea:disabled,input[type="text"]:disabled,#qfs_form input[type="email"]:disabled,#qfs_form input[type="tel"]:disabled,#qfs_form input[type="time"]:disabled,#qfs_form input[type="number"]:disabled,#qfs_form input[type="password"]:disabled {
+    color:#e3e3e3;
+    border-bottom:2px solid #e3e3e3
+}
+
+/* hyperlinks */
+#qfs_form a {
+    color:#009;
+    text-decoration:none
+}
+
+#qfs_form a:hover,#qfs_form a:focus {
+    color:#fd6400;
+    text-decoration:none
+}
+
+
+
+/***** IE9 and Up Specific CSS *****/
+
+.ie #qfs_form button.ui-datepicker-trigger:after {
+    display:inline-block;
+    content:' ';
+    background-image:url(images/datepicker.svg);
+    background-repeat:no-repeat;
+    background-size:2.2em;
+    width:2.32em;
+    height: 2.5em;
+    padding-right:0;
+    padding-bottom:2em;
+    position:relative;
+    top: 0em;
+    padding-top: .8em!important;
+    border-radius: 0px!important;
+}
+
+.ie #qfs_form select,.ie8 #qfs_form select {
+    background:none!important;
+    padding-right:0!important
+}
+
+.ie #qfs_form select::-ms-expand {
+    display: block;
+}
+/* datepicker select width */
+.ie div#ui-datepicker-div select {
+    width: 10em;
+}
+/***** IE8 Specific CSS *****/
+
+
+/* datepicker select width */
+.senses14.ie8 div#ui-datepicker-div {
+    position:fixed!important;
+}
+
+
+.ie8 div#ui-datepicker-div select {
+    width: 10em;
+    background-image: (url(images/select.png) no-repeat right)
+}
+.ie8 div#ui-datepicker-div select:focus {
+    background-image: (url(images/select-focus.png) no-repeat right)
+}
+
+/* datepicker png */
+.ie8 #qfs_form button.ui-datepicker-trigger:after {
+    display: block;
+    content: ' ';
+    background-image: url(images/datepicker.png);
+    background-repeat: no-repeat;
+    top: -.3em;
+    width: 50px!important;
+    padding-top: .6em!important;
+    padding-bottom: .6em!important;
+}
+
+.ie8 #qfs_form button.ui-datepicker-trigger:hover:after, .ie8 #qfs_form button.ui-datepicker-trigger:focus:after {
+    background-image:url(images/datepicker.png);
+    background-repeat: no-repeat;
+    background-opacity: 0.8;
+}
+
+/* replacing check svg with png */
+.ie8 #qfs_form .value[data-validation-status="valid"] input[type="text"], .ie8 #qfs_form .value[data-validation-status="valid"] textarea, .ie8 #qfs_form .value[data-validation-status="valid"] input[type="tel"], .ie8 #qfs_form .value[data-validation-status="valid"] input[type="email"] {
+    border-bottom: 2px solid #aaa;
+    color: #666;
+    background: url(images/check.png) no-repeat;
+    background-size: 1em;
+    background-position: 98% 1%;
+}
+
+
+/*basic steps styling*/
+.ie8 #qfs_form ol {
+    list-style-type:none
+}
+
+.ie8 #qfs_form div.formSequenceMenu > ol.steps > li.active:before, .ie8 #qfs_form div.formSequenceMenu > ol.steps > li:before  {
+    color: #666666;
+}
+
+.ie8 #qfs_form ol.steps li:before {
+    position: relative;
+    top: 3px;
+}
+
+.ie8 #qfs_form ol.steps li {
+    display: none;
+}
+
+/* radiobuttons on a row */
+.ie8 #qfs_form span.horizontal + label {
+    float:left;
+    width:auto
+}
+
+/* modal position */
+.ie8 .modal {
+    position:fixed;
+    top:50%;
+    left:50%
+}
+
+/* formdisclaimer close button png */
+.ie8 #cboxClose {
+    position:relative;
+    float:right;
+    padding-right:2.5em;
+    text-indent:0
+}
+/* checkbox */
+#qfs_form span.checkbox input {
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    margin-left:.35em;
+}
+
+#qfs_form span.checkbox label {
+    width: auto;
+    width: auto;
+    position: relative;
+    float: left;
+}
+
+/* summary page */
+#qfs_form .matrix .column {
+    width:6em;
+    float:left;
+    padding-left:.5em;
+    padding-right:.5em
+}
+
+#qfs_form .matrix .row .column:first-child { width: 50% !important;}
+
+#qfs_form .nonApplicable {display: none;}
+#qfs_form span .fixedValue, .value.fixedValue {color:#666!important}
+#qfs_form span > h6 {font-weight:normal!important}
+#qfs_form span.fixedValue > p {padding:0em!important;margin:0em!important}
+
+#qfs_form .matrix .column span.fixedValue {
+    padding-left:0!important
+}
+
+#qfs_form .matrix .row {
+    border-bottom:1px solid #CCC;
+    height:1.8em;
+    padding:.2em;
+    width:98%
+}
+
+#qfs_form .matrix label {
+    padding-left:0!important
+}
+
+#qfs_form span.fixedValue {
+    padding-left:.42em
+}
+
+#qfs_form .fixedValue {
+    color:#009
+}
+
+#qfs_form span.fixedValue > span.textBeforeInputField {
+    padding-right:.5em;
+    padding-left:.5em;
+}
+
+/* fix radiobutton ie8 ra_screen */
+.ie8 #pa_content #qfs_form label.label > input[type='radio'] {
+    display: block!important;
+    position: relative;
+    top: 15px;
+}
+
+
+
+/* tooltip */
+.ie8 #qfs_form a.informationPopupToggle {
+    text-indent:-9999px;
+    display:inline-block;
+    background:url(https://www.rabobank.nl/static/generic/css/images/information_small.gif) no-repeat;
+    background-size:1em;
+    padding-left:.5em;
+    padding-right:.53em;
+    margin-top:.4em;
+}
+
+.ie8 #qfs_form a.informationPopupToggle:hover {
+    text-indent:-9999px;
+    display:inline-block;
+    background:url(https://www.rabobank.nl/static/generic/css/images/information_small_mo.gif) no-repeat;
+    background-size:1em
+}
+
+.ie8 #qfs_form a.informationPopupToggle:focus {
+    outline:0
+}
+
+.ie8 .modal button.close {
+    float:right;
+    text-indent:-9999px;
+    border:none;
+    background-image:url(https://www.rabobank.nl/static/generic/css/images/butt_close.gif);
+    background-repeat:no-repeat;
+    background-color:#f7f7f7;
+    cursor:pointer;
+    background-size:1em;
+    padding:.2em;
+    height:1em;
+    width:1em
+}
+
+.modal button.close:hover {
+    background-image:url(images/butt_close.svg);
+    background-repeat:no-repeat;
+    opacity:.8
+}
+
+/* radio en checkboxes */
+.ie8 #qfs_form label.label > input[type="radio"] {
+    display: inline-block;
+    display:inline-block;
+    width:auto!important;
+}
+#qfs_form label.label > input[type="radio"]:hover, #qfs_form label.label > input[type="checkbox"]:hover {
+    border-bottom: 1px solid transparent;
+}
+
+/*******/
+
+.modal button.close:hover {
+    background-image: url("images/butt_close.svg");
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+
+/* radio en checkboxes */
+
+#qfs_form label.label > input[type="radio"] {
+    display: none;
+}
+
+#qfs_form label.label.checked > input[type="radio"] + span {
+    background:url(images/radio_on.svg) no-repeat;
+    background-size:1.5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    position:relative;
+
+}
+
+#qfs_form label.label > input[type="radio"] + span {
+    background:url(images/radio_off.svg) no-repeat;
+    background-size:1.5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    position:relative;
+}
+
+#qfs_form label.label.checked > input[type="radio"] + span:before {
+    content:"";
+    padding-right:2em;
+}
+
+#qfs_form label.label > input[type="radio"] + span:before {
+    content:"";
+    padding-right:2em
+}
+
+/* radiobutton alignment */
+#qfs_form .value.radio > label.label {
+    width:100%;
+    padding-bottom: .3em;
+}
+
+#qfs_form .value.radio.horizontal > label.label {
+    width:auto
+}
+
+
+/* error message */
+div.message.error ul li {
+    list-style: none;
+    color: red;
+    font-size: .85em;
+    padding-bottom: 1em;
+    padding-left: .3em;
+    width: 100%;
+    float: left;
+}
+.s14-block .content .error ul li:before {
+    content: ''!important;
+}
+
+/* Data Validation Field Markup */
+#qfs_form .value[data-validation-status="valid"] input[type="text"],#qfs_form .value[data-validation-status="valid"] textarea, #qfs_form .value[data-validation-status="valid"] input[type="tel"], #qfs_form .value[data-validation-status="valid"] input[type="email"] {
+    border-bottom: 2px solid #aaa;
+    color: #666;
+    background: url(images/check.svg) no-repeat;
+    background-size: 1em;
+    background-position: 98% 1%;
+}
+
+#qfs_form .value[data-validation-status="invalid"] input {
+    border-bottom: 2px solid #FF0000;
+    color: #666;
+}
+
+#qfs_form [data-validation-status='valid'].value input[type="radio"] {
+    border: none;
+}
+
+#qfs_form [data-validation-status='invalid'].value input[type="radio"] {
+    border: none;
+}
+
+#qfs_form [data-validation-status='valid'].value input[type="checkbox"] {
+    border: none;
+}
+
+#qfs_form [data-validation-status='invalid'].value input[type="checkbox"] {
+    border: none;
+}
+/* error message font-size */
+#qfs_form div.message.error {
+    font-size: 1.3em;
+}
+
+/* inlogverleiding button */
+#qfs_form .buttonsecure {
+    background: #fd6400;
+    border: 1px solid #fd6400;
+    color: #fff!important;
+    border-radius: 7px/50%;
+    margin: .5em .5em .75em 0;
+    min-width: 9em;
+    text-align: center;
+    text-decoration: none!important;
+    line-height: .4em;
+    padding: .8em;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#qfs_form .buttonsecure a {
+    color: white!important;
+}
+
+/* datepicker button */
+#qfs_form button.ui-datepicker-trigger {
+    background-color:transparent;
+    border:.2em solid transparent;
+    min-width:1em;
+    outline:0;
+    margin:0;
+    padding: 0;
+}
+
+#qfs_form button.ui-datepicker-trigger img {
+    display:none
+}
+
+#qfs_form button.ui-datepicker-trigger:after {
+    display: block;
+    content: ' ';
+    background-image: url(images/datepicker.svg);
+    background-repeat: no-repeat;
+    background-size: 2.2em;
+    height: 2.2em;
+    width: 2.2em;
+    padding-right: 2.36em;
+
+    padding-bottom: 2.36em;
+    border-radius: 0px;
+    position: relative;
+    top: 1em;
+}
+
+#qfs_form button.ui-datepicker-trigger:hover:after,#qfs_form button.ui-datepicker-trigger:focus:after {
+    background-image:url(images/datepicker-hover.svg);
+    background-repeat: no-repeat;
+}
+
+/*label.label*/
+#qfs_form label.label {
+    display:inline-block;
+    position:relative;
+    text-align:left;
+    margin-top:.4em;
+    padding-right: .5em;
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+/* more info collapse */
+#qfs_form .infoTextWithMoreInfo > .labels > a {
+    text-decoration: none;
+}
+
+#qfs_form .infoTextWithMoreInfo > .labels > a:before {
+    content: "\2193";
+    padding-right: .5em;
+}
+
+/* disclaimer */
+#qfs_form .formDisclaimer {
+    float:left;
+    width: 100%;
+}
+
+#colorbox {
+    background-color:#90d1e3;
+    background-image: url("images/Rabobank-icoon-alert-bold-32x32-RGB.svg");
+    background-position: 1% 50%;
+    background-image: 2em;
+    background-repeat: no-repeat;
+    color:#333333;
+    z-index:250;
+}
+
+#colorbox:focus {
+    outline:0
+}
+
+#cboxClose {
+    position: relative;
+    float: right;
+    top: -80%;
+    right: 3%;
+    text-indent: -9999px;
+    background-image: url("images/butt_close.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: right;
+    border: none;
+    cursor: pointer;
+    background-size: 1em;
+    width: 1em;
+    height: 1em;
+}
+
+#qfs_disclaimerText  p {
+    margin-left: 7%;
+    font-family: "Myriad Italic";
+    width: 80%;
+}
+
+#qfs_disclaimerText strong {
+    display: none;
+}
+
+/* webform footer */
+
+#qfs_form .formDialogueFooter {
+    float:left;
+    padding-bottom:1em;
+    width: 100%
+}
+
+
+/* tooltip */
+#qfs_form a.informationPopupToggle {
+    text-indent:-9999px;
+    display:inline-block;
+    background:url(images/tooltip.svg) no-repeat;
+    background-size:1em;
+    padding-left:.5em;
+    padding-right:.53em;
+    position: relative;
+    top: .1em;
+    margin-left: .2em;
+}
+
+#qfs_form a.informationPopupToggle:hover {
+    text-indent:-9999px;
+    display:inline-block;
+    background:url(images/tooltip-hover.svg) no-repeat;
+    background-size:1em
+}
+
+#qfs_form a.informationPopupToggle:focus {
+    outline:0
+}
+
+
+
+/* select box */
+#qfs_form select {
+    border:2px solid transparent;
+    padding-left:.6em;
+    color: #666;
+    border-bottom:2px solid #aaa;
+    border-radius: 1em;
+    border-bottom-right-radius:0;
+    padding-right: 1.8em;
+    background:transparent;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow: ''; /* this is important! */
+    content:'';
+    background:url(images/select.svg) no-repeat right;
+    position:relative;
+    background-size:1.6em;
+    height:2em
+}
+
+#qfs_form select::-ms-expand {
+    display: none;
+}
+
+#qfs_form select:hover {
+    opacity:.8;
+    cursor:pointer
+}
+
+#qfs_form select:focus {
+    border:.2em solid transparent;
+    border-bottom: 2px solid #aaa;
+    border-radius: 1em;
+    border-bottom-right-radius:0;
+    background:transparent;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow: ''; /* this is important! */
+    content:'';
+    outline:0;
+    background:url(images/select-focus.svg) no-repeat right;
+    position:relative;
+    background-size:1.6em;
+    height:2em;
+
+}
+
+#qfs_form option {
+    background:transparent;
+    color:#333!important
+}
+
+/* calendar overlay */
+div#ui-datepicker-div {
+    display: none;
+    background-color:#fff;
+    width:auto;
+    height:auto;
+    border: 1px solid #ccc;
+    border-radius:15px;
+    color:#009;
+    padding:1em
+}
+
+div#ui-datepicker-div span.title {
+    font-size:19em
+}
+
+div#ui-datepicker-div th {
+    width:2em
+}
+
+div#ui-datepicker-div td,th {
+    border-spacing:.1em
+}
+
+div#ui-datepicker-div td {
+    height:2em;
+    border: 1px solid #CCC;
+    border-radius:3px
+}
+
+div#ui-datepicker-div td.ui-state-disabled {
+    background-color:#e3e3e3
+}
+
+div#ui-datepicker-div td {
+    text-align:center
+}
+
+div#ui-datepicker-div td:hover {
+    background-color:#F60;
+    color:#fff
+}
+
+td.ui-datepicker-current-day {
+    background-color:#F60;
+    color:#fff
+}
+
+.ui-datepicker-prev {
+    float:left;
+    cursor:pointer
+}
+
+.ui-datepicker-next {
+    float:right;
+    cursor:pointer
+}
+
+.ui-datepicker-title {
+    padding-left:2em
+}
+
+div#ui-datepicker-div button.ui-datepicker-current {
+    background:#fd6400;
+    border:.2em solid #fd6400;
+    color:#fff!important;
+    height:2.2em;
+    border-radius:7px/50%;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    margin:.5em .5em .75em 0;
+    width:7em;
+    text-align:center;
+    text-decoration:none!important;
+    line-height:.4em;
+    padding:.8em;
+    display:inline-block;
+    cursor:pointer
+}
+
+div#ui-datepicker-div button.ui-datepicker-current:hover,div#ui-datepicker-div button.ui-datepicker-close:hover {
+    opacity:.6
+}
+
+div#ui-datepicker-div button.ui-datepicker-close {
+    float:right;
+    background:#f7f7f7;
+    height:2.2em;
+    border:1px solid #aaa;
+    color:#666!important;
+    border-radius:7px/50%;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    margin:.5em .5em .75em 0;
+    width:7em;
+    text-align:center;
+    text-decoration:none!important;
+    line-height:.4em;
+    padding:.8em;
+    display:inline-block;
+    cursor:pointer
+}
+
+button.ui-datepicker-current {
+    float:left;
+    padding-left:.4em
+}
+
+div#ui-datepicker-div select {
+    border:.2em solid transparent;
+    border-bottom:1px solid #aaa;
+    border-bottom-left-radius:13px;
+    width:5.5em;
+    background:transparent;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    content:'';
+    background:url(images/select.svg) no-repeat right;
+    position:relative;
+    background-size:1em;
+    color:#333;
+    padding-left:1em
+}
+
+div#ui-datepicker-div select:focus {
+    outline:0;
+    background:url(images/select-focus.svg) no-repeat right;
+    background-size:1em;
+
+}
+
+div#ui-datepicker-div option {
+    background:transparent;
+    -webkit-appearance:none
+}
+
+div.ui-datepicker-title {
+    padding-bottom:1em
+}
+
+/* validation error messages */
+.popover {
+    position:absolute;
+    float:fixed;
+    color:red;
+    width:auto;
+    background-color:#fff;
+    border:1px solid #ccc;
+    padding:1em;
+    margin-top:6em;
+    font-size:.8em;
+    border-radius:1em
+}
+
+/* tooltip modal */
+.modal .informationBlock .informationTitle {
+    display:none;
+}
+
+.modal .informationBlock .informationContent {
+    word-wrap:break-word;
+    clear:both
+}
+
+.modal button.close {
+    float:right;
+    text-indent: -9999px;
+    border: none;
+    background-image: url("images/butt_close.svg");
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    background-size: 1em;
+    padding: .2em;
+    height: 1em;
+    width: 1em;
+}
+
+.modal button.close:hover {
+    background-image: url("images/butt_close.svg");
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+.modal button.close:focus {
+    outline: 0
+}
+
+.overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:200;
+    background-color:rgba(0,0,0,0.0)
+}
+
+.modal {
+    background-color:#f7f7f7;
+    position:absolute;
+    padding-top:.5em;
+    padding-right:1em;
+    padding-bottom:1em;
+    padding-left:1em;
+    color:#666;
+    z-index:250;
+    opacity:1;
+    border: 1px solid #aaa;
+    box-shadow:0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width:20em
+}
+
+
+/***** for mobile devices only *****/
+.mobile #qfs_form span.buttonAfterInputField {
+    float: left;
+}
+
+/* validation error messages */
+.mobile .popover {
+    position: absolute;
+    padding-left: 1.5em!important;
+    margin-top: 5.4em!important;
+    font-size: 1.2em!important;
+    background-color: none!important;
+}
+/* select / option*/
+.mobile #qfs_form select {
+    font-size: 1.2em;
+    padding-right: 2em;
+}
+.mobile #qfs_form option {
+    line-height: 1em;
+    font-size: 1.3em "Myriad Regular",Verdana,Sans Serif;
+}
+
+
+/*larger texts*/
+.mobile #qfs_form .entryGroupHeader {
+    font-size: 1.7em;
+}
+.mobile #qfs_form .formDialogueHeader {
+    font-size: 1.8em;
+}
+
+.mobile #qfs_form .formScreenIntroduction {
+    font-size: 1.5em;
+}
+.mobile #qfs_form .formDialogueTitle {
+    font-size: 3em;
+}
+
+.mobile #qfs_form span.textBeforeInputField, .mobile #qfs_form span.textAfterInputField {
+    font-size: 1.35em;
+}
+.mobile #qfs_form td {
+    font-size: 1em!important;
+}
+
+
+/* Data Validation Field Markup */
+.mobile #qfs_form .value[data-validation-status="valid"] input, .mobile #qfs_form .value[data-validation-status="valid"] textarea {
+    background-position: 97% 45%;
+}
+/*close button in tooltip larger*/
+.mobile .modal button.close {
+    height: 2em;
+    width: 2em;
+    background-image: url("images/butt_close.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mobile #qfs_form ol.steps > li {
+    width: auto;
+    float: left;
+}
+.mobile #qfs_form ol.steps > li > span, .mobile ol.steps > li > a
+{
+    display: none;
+}
+.mobile #qfs_form div.formSequenceMenu > ol.steps > li.performed > a
+{
+    display: none;
+}
+
+
+/* datepicker mobile*/
+.mobile div#ui-datepicker-div {
+    width: 80%;
+}
+.mobile #qfs_form button.ui-datepicker-trigger:after {
+    display:block;
+    content:' ';
+    background-image:url(images/datepicker.svg);
+    background-repeat: no-repeat;
+    background-size:1.3em;
+    height:1.32em;
+    width:1.32em;
+    padding-right: 0em;
+    padding-bottom: 2.36em;
+    position:relative;
+    top: -0.35em;
+}
+.mobile table.ui-datepicker-calendar {
+    width: 100%;
+}
+.mobile div#ui-datepicker-div select {
+    width: 45%;
+    font-size: 1.5em;
+}
+.mobile div#ui-datepicker-div td {
+    height: 2.4em;
+}
+.mobile button.ui-datepicker-current, .mobile button.ui-datepicker-close {
+    height: 2.4em!important;
+    font-size: 1.5em;
+}
+.mobile table a {
+    font-size: 1.4em!important;
+}
+.mobile thead {
+    font-size: 1.4em!important;
+}
+/*bigger label text */
+.mobile #qfs_form .labels > label{
+    font: 1.35em "Myriad Regular",Verdana,Sans Serif!important;
+    line-height: 1em!important;
+}
+/* larger buttons */
+.mobile #qfs_form button {
+    height: 2em;
+    font-size: 1.5em;
+}
+/* bigger heading / intro */
+.mobile #qfs_form .formDialogueHeader, .mobile #qfs_form .formScreenIntroduction, {
+    font-size: 1.4em;
+}
+/* tooltip modal mobile */
+.mobile .modal {
+    width: 80%;
+}
+.mobile .modal .informationContent, .mobile .modal .informationTitle {
+    font-size: 1.5em;
+}
+.mobile td {
+    font-size: .5em!important;
+}
+/* bigger text in input/textarea */
+.mobile #qfs_form input, .mobile #qfs_form textarea {
+    font-size: 1.3em;
+    float: left;
+}
+
+/* bigger radiobuttons */
+.mobile #qfs_form label.label > input[type="radio"] + span {
+    background: url(images/radio_off.svg) no-repeat;
+    background-size: 1.5em;
+    padding: .5em;
+}
+
+.mobile #qfs_form .value.radio > label.label {
+    font-size: 1.3em;
+}
+
+.mobile #qfs_form label.label > input[type="radio"] + span:before {
+    padding-right: 2.5em;
+}
+
+.mobile #qfs_form label.label.checked > input[type="radio"] + span {
+    background:url(images/radio_on.svg) no-repeat;
+    background-size:1.7em;
+    padding: .5em;
+    padding-top: .5em;
+}
+
+.mobile #qfs_form label.label > input[type="radio"] + span {
+    background:url(images/radio_off.svg) no-repeat;
+    background-size:1.7em;
+    padding: .5em;
+    padding-top: .5em;
+}
+
+.mobile #qfs_form label > span {
+    font-size: 1.1em;
+}
+
+/* button secure adjustments for mobile */
+.mobile #qfs_form .buttonsecure {
+    height: 2em;
+    font-size: 1.5em;
+}
+
+/* reset all input field widths to auto on mobile */
+.mobile #qfs_form textarea,.mobile #qfs_form input[type="text"],.mobile #qfs_form input[type="email"],.mobile #qfs_form input[type="tel"],.mobile #qfs_form input[type="time"],.mobile #qfs_form input[type="number"],.mobile #qfs_form input[type="password"] {
+    width: auto;
+}
+
+.mobile #qfs_form input[size="1"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="2"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="3"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="4"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="5"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="6"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="7"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="8"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="9"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="10"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="11"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="12"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="13"] {
+    width: auto;
+}
+.mobile #qfs_form input[size="14"] {
+    width: auto;
+}
+
+/* multiple radio buttons ordered in a horizontal way become vertically ordered */
+
+.mobile #qfs_form span.value.radio.horizontal > label {
+    width: 100%;
+    float: left;
+}
+
+/* table matrix */
+
+.mobile #qfs_form .matrix {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+.mobile #qfs_form .row {
+    display: table-row;
+    border: 1px solid purdple;
+}
+.mobile #qfs_form .column {
+    display: table-cell;
+    padding: 5px 0;
+    border: 1px solid ydellow;
+    min-width: 20%;
+}
+.mobile #qfs_form .column > span .textAfterInputField {
+    float: right !important;
+    position: relative;
+}
+.mobile #qfs_form .column .entry .labels {
+    display: none;
+}
+.mobile #qfs_form .column .entry .values {
+    width: 100%;
+}
+.mobile #qfs_form .column.alignLeft {
+    text-align: left;
+}
+.mobile #qfs_form .column.alignCenter {
+    text-align: center;
+}
+.mobile #qfs_form .column.alignRight {
+    text-align: right;
+}
+.mobile #qfs_form .column > .value {
+    display: table-cell;
+    color: #666;
+}
+.mobile #qfs_form .matrix .row .column:first-child {
+    width: 50% !important;
+}

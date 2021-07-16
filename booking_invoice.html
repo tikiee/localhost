@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trip confirmation</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.phoneinfo { width: 100%; border: 1px solid #D2D2D2; background-color: #EAEAEA; border-radius: 3px; 
+	padding-bottom: 5px; padding-top: 5px; padding-left: 5px; font-weight:bold; text-transform:uppercase;}
+.visa { text-align: center; }
+label { margin-bottom: 7px; }
+.label1 { width: 20%; display: inline-block; }
+.label2 { width: 20%; display: inline-block; }
+.label3 { width: 20%; display: inline-block; }
+.label4 { width: 20%; display: inline-block; }
+.inner_text{ padding:15px;}
+.clearfix { clear: both; }
+</style>
+</head>
+<body>
+<div class="form">
+  <p><i>THANK YOU FOR CHOOSING<br>
+    MANAGE MY FLEET</i></p>
+  <div class="phoneinfo">TRIP CONFIRMATION</div>
+  <div class="inner_text">
+      <label class="label1">Booking Ref #:</label>
+      <label class="label2">{booking_key}</label>
+      <div class="clearfix"></div>
+      <label class="label3">Passenger :</label>
+      <label class="label4">{customer_name}</label>
+      <div class="clearfix"></div>
+      <label class="label1">Mobile:</label>
+      <label class="label2">{customer_phone}</label>
+      <div class="clearfix"></div>
+      <label class="label1">Pickup Location</label>
+      <label class="label1">{pickup_location}</label>
+      <label class="label1">Drop Location</label>
+      <label class="label1">{dropoff_location}</label>
+      <div class="clearfix"></div>
+      <label class="label1">Date and time of pick up</label>
+      <label class="label1">{pickup_date_time}</label>
+      <label class="label1">Date and time of drop off</label>
+      <label class="label1">{dropoff_date_time}</label>
+      <div class="clearfix"></div>
+      <label class="label1">Vehicle Requested</label>
+      <label class="label1">{vehicle}</label>
+      <label class="label1">No. Of Trips</label>
+      <label class="label1">{no_of_trips}</label>
+      <div class="clearfix"></div>
+      <label class="label1">Special requirements</label>
+      <label class="label1">{special_requirements}</label>
+  	  <div class="clearfix"></div>
+	</div>
+  <div class="phoneinfo"> Routing & Pick-Up / Drop-Off Details: </div>
+  <div class="inner_text">
+      COLLECTION FROM:> MOB: {customer_phone} ({customer_name}) - CALL ON APPROACH<br>
+      {is_surprise}
+      - <br>
+      {pickup_time} - {pickup_location} <br>
+      TAKING TO: <br>
+      {dropoff_location}<br>
+      {dropoff_time} - - - - END HIRE - - - <br>
+      THE CAR BOOKED HAS BEEN SUPPLIED TO YOU WITH A CHAUFFEUR.<br>
+      - <br>
+      *** YOU MUST CONFIRM & SECURE YOUR BOOKING AT: WWW.MANAGEMYFLEET.COM *** <br>
+      ****FAILURE TO DO SO WILL RESULT IN YOUR VEHICLE BOOKING BEING CANCELLED & NO REFUND*******<br>
+      ** ** * FOR ASSISTANCE REGARDING YOUR BOOKING PLEASE CALL · 0871 237 8212 · ** ** * <br>
+      - <br>
+  </div>
+  <div class="phoneinfo">Terms & Conditions:</div>
+  <div class="inner_text">
+      <p>
+      <h3 class="visa"> For Complete Terms & Conditions Of Hire Please See Below - All Apply To Manage My Fleet, Chauffeur Driven & Cupid Carriages Bookings </h3>
+      </p>
+      <p> Deposits are non-refundable/transferable. We require payment by credit/debit card over the telephone to confirm. Once payment details are taken - you the client have then entered into a contract with Manage My Fleet/Cupid and terms & conditions apply from this time (credit cards carry a 2.5% charge. A 50% deposit is required to confirm unless within 14days (within 60 days if prom/ball/school leaving etc booking) - in which case the full amount is payable to confirm. All balance payments are to be cleared 14 days prior to your hire date (except Prom/Ball/school leaving etc which all have to be cleared by 31st March 2013 & Weddings - 28 days prior. The Hirer is responsible for the full payment of any overtime charges, beyond the original agreement. The Hirer authorises Manage My Fleet the right to take any outstanding monies due/owed from the credit/debit card number given at the time of booking including parking/toll etc charges which are incurred. All cancellations are to be made in writing and the date of cancellation is calculated from when your letter is received by ourselves at the below address. Cancellations charges are as follows: All Bkgs except Proms/School Leaving/Weddings etc - Upto 15 days prior to the journey date= Loss of Full Deposit only (always 50% of total hire cost). Within 14 days of the journey date = 100% charge. Proms/ball/school leaving etc - Upto 60days prior =Loss of Full deposit (always 50% of total hire cost/ within 60 days =Full Amount. </p>
+      <p> Weddings upto 28days =50% of total cost. Within 28days = 100% of total cost. Absolutely no guaranteed timings can be given, as all hire times are approximate and the vehicle may arrive sooner or later than the original time booked-all this is dependable but not limited to traffic/road/weather conditions** etc, but your full hired time will still be offered if/where possible but no refunds if this effects your event or you do not take the full hire time. If your booking is cancelled prior by Manage My Fleet UK Ltd due to these conditions**, a full refund of the Manage My Fleet hire only shall be given/accepted. Please allow 15 minutes before calling the office. ALL Return Drop offs are only back to the same collection point/s unless specified on your confirmation. Prom/school prices etc are based on one pick up &/or one drop off. Lost property must be collected from the premises & are only held for one month after the hire date- we do not post left items. All school leaving / Trips/Prom Dates are non-transferable. </p>
+      <p> In car entertainment such as TV, video, DVD, music, lights is provided as a courtesy & do not form part of the cost of the hire.Manage My Fleet accepts no liability & no compensation/refunds will be given should these fail to/not work. If you cut your hired time short, no refunds are given. The hirer accepts total responsibility for all passengers whilst on the hire. For infant passengers - a maximum of two can be transported as they must to be seated in a child car seat on a forward facing seat never on passenger laps.Manage My Fleet will not be responsible for any injury attributable in whole or in part to a passenger’s failure to wear a seat belt. You shall indemnify us in respect of actions, costs, claims and demands arising as a result of such a failure.Cheques no longer accepted. No Alcohol allowed for under 18's/age Prom/School Leaving/Ball etc - If any found or underage passenger is under any Alcohol influence, I the Hirer accepts the hire will be terminated immediately for all passengers. Manage My Fleet reserves the right to cancel bookings/hires at any time. I, the Hirer confirm that I have read & understood the terms & conditions & therefore accept the conditions of trade. </p>
+  </div>
+  <h2 class="visa">FULL TERMS AND CONDITIONS</h2>
+	<div class="inner_text">
+      <ol>
+        <li>Once a telephone booking has been made by credit/debit card, you have entered into a booking contract with Manage My Fleet/CC and cancellation charges will apply from the moment the booking has been taken.</li>
+        <li>The hirer is fully responsible & liable for any damage caused both inside & outside the vehicle or its contents by a third party. The hirer agrees to be held liable for the retail cost of any repair as a consequence of any damage caused and that it is American pie Limos discretion to determine who will affect the repairs. The hirer will also be liable at a fixed rate for the loss of work whilst the car is being repaired and unable to be used.</li>
+        <li>We shall not be liable or responsible for any articles left in the vehicles & is the hirer’s responsibility to advise all party members and to collect any belongings from us – we do not post items at all and only keep any item up to 1 month from the hire date before disposing of.</li>
+        <li>The driver will not accept any instructions from any member other than the hirer. Manage My Fleet reserves the right to refuse to carry passengers whose behaviour is deemed by the driver to be unacceptable, e.g., but not limited to drunken, abusive behaviour or vomiting and also reserves the right to terminate the hire at any time, with no refund.  If there is any soiling or vomiting in or on the limousines – the hirer will be charged a statutory £150.00 valeting fee, which is payable immediately & the hirer gives the right for Manage My Fleet to take the balance from the credit/debit card in which the deposit was paid otherwise this will be invoiced for immediate payment to the hirer.</li>
+        <li>Personal alcohol, smoking, eating or any illegal substances may not be consumed or carried in any vehicle.  Manage My Fleet holds an alcohol license & Tariff to supply all drinks including non-alcoholic a (3 day’s notice required – please call the office to order – note they cannot be purchased on the hire date or with the driver). The opening of the bubbly can be hazardous to occupants of the vehicle& may give rise to damage to the vehicle and should be left to the chauffeur only to open outside the limousine/vehicle.  Due to traffic/road conditions etc. Manage My Fleet cannot be held responsible for spilt bubbly or drinks which may fall on clothing or articles.  The hirer accepts responsibility on behalf of the hirers party for any losses or damage to the property of Manage My Fleet that is provided in the vehicles, this includes but is not limited to glassware, cd’s, dvd’s, players etc.</li>
+        <li>In car entertainment such as TV screens, video, DVD, music, karaoke is provided as a courtesy and does not form part of the cost of the hire – if there are any malfunctions prior or during the hire, Manage My Fleet accepts no liability whatsoever and no compensation or refunds will be given.</li>
+        <li>All our vehicles are fitted with seat belts and are there to be used by all, it is the passenger’s responsibility to use and wear them & the hirer accepts responsibility to advise the party of this.</li>
+        <li>Minors under the age of 13 must be accompanied by an adult 18+ in the vehicles at all times & the hirer is responsible for making sure all minors/passengers wear the seatbelts in the vehicle at all times.</li>
+        <li>The hirer of the limousine must be 18 years or over.</li>
+        <li>Limousines in England are legally bound to carry no more than eight passengers, Manage My Fleet will not at any time compromise on this issue; however H2 Hummer Limousines can carry upto 16 passengers only with a COIF certificate – which Manage My Fleet Holds.</li>
+        <li>Bookings will only be confirmed with either 50% of the total cost or the full amount and require a signed booking form.  Balances have
+          
+          
+          to be paid 14 days prior to the hire date (28 days before for all weddings & by the 31st March each year for all Proms/school leaving/Balls etc.) & the hirer gives the right for Manage My Fleet to take the balance from the credit/debit card in which the deposit was paid if an alternative payment for the balance is not received prior to the due date.</li>
+        <li>Manage My Fleet reserves the right, and the hirer accepts that we can change the specification of the vehicle booked at any time – where the replacement vehicle is of a lesser value or specification, an appropriate adjustment is made in favour of the hirer, as per Manage My Fleet prices, but no refunds or compensation will be made.</li>
+        <li>Manage My Fleet reserves the right to sub-contract a third party without reference to the hirer.</li>
+        <li>In the event that a vehicle is subject to an accidental or mechanical failure, or is no longer safe to drive, then Manage My Fleet shall make alternative arrangements to get the hirer and party to your destination. It is at Manage My Fleet’s entire discretion to determine the method of onward travel, alternatively the hirer may make alternative arrangements at their cost, for which no claim can be made against Manage My Fleet. The hirer accepts that the hire is based on a best endeavour basis and therefore, no specific guarantees can be made in terms of time, reliability of the vehicle and/or events out of our direct control of the chauffeur or Manage My Fleet.</li>
+        <li>Absolutely no guaranteed timings can be given, as all pick-up times are approximate and the vehicle may arrive sooner or later than the original booking time – all this depends but is not limited to road & traffic conditions for example, but your hired time will not be effected, please allow 15 minutes before calling the office.
+          
+          
+          If your booking exceeds the original time booked, charges will be made & you authorise Manage My Fleet to deduct this fee from your credit/debit card (the fee is charged at £150.00 per hour or part of) except - Airport charges which are different – for delayed flights, waiting time is charged at £80 per hour or part of and there is a maximum waiting time of 2 hours (as long as the vehicle is able to wait & other work is not affected. If the vehicle had to leave, no alternative transport, refunds or compensations will be made/paid).</li>
+        <li>Hirers must use their own child seat for infants/children, but they are to fit the seats themselves to make sure it fits securely & correctly& on a forward facing seat only.</li>
+        <li>The hirer shall be responsible for any parking charges and any toll or congestion charges, which shall be charged at cost on top of the hire price.</li>
+        <li>Any changes to your booking must be agreed with Manage My Fleet and an administration charge of £20.00 will be charged.
+          
+          
+          If you wish to transfer your hire to a different
+          
+          
+          date. (Bookings are non-transferable within 14 days of the hire & will be treat as a cancellation).  The transfer date must be within three months of the original date booked or it will be treat as a cancellation and not transferable, cancellation charges apply.</li>
+        <li>All cancellations must be in writing. All deposits are non-refundable. In the event of cancellation within 14days, (28 days for all weddings & proms etc) all monies (full amount) of hire are to be paid or are non-refundable. Cancellation charges apply from when written notice is received by ourselves.</li>
+        <li>Manage My Fleet reserves the right to charge a refundable bond on certain hires, i.e. weddings, sporting events, race days, and airports: further information on this is available upon request.</li>
+        <li>The limousine divider between the driver and passengers has to be down at all times.</li>
+        <li>Complaints Procedure: Placed in writing only by the hirer – note this cannot be dealt with over the telephone</li>
+        <li>Manage My Fleet reserve the right to cancel any hire due to unforeseen events/circumstances – e.g.: weather/road conditions /traffic flow/delays. A full refund of the hire cost paid will be refunded by the same means the hire was paid. No compensation or additional fees will be paid.</li>
+        <li>All amendments/payments made to your booking can only be made during office hours 0930-1730 Mon-Fri. Any alterations within 14 days must be made in writing/email by the hirer & the hirer must call the office to confirm the changes have been made by the office.</li>
+        <li>Items given complimentary are always subject to availability while stocks last and do not form part of the hire cost.</li>
+        <li>Although every effort is made, special requirements cannot be guaranteed.</li>
+        <li>If fuel exceeds the cost of £1.39 per litre petrol + £1.49 per litre diesel – bookings will/may be subject to a further 10% surcharge on top of the hire cost total which the hirer agrees to pay.</li>
+        <li>The hirer is fully aware that chauffeurs will only be able to carry out what is listed on the confirmation , any special requirements or additions must be cleared via the office prior – call 01909 515117.</li>
+        <li>All convertible vehicles shall leave the premises with the roof up/closed unless otherwise directed by the client as a special requirement 7 (seven) days prior to the hire date.</li>
+        <li>It is the client’s responsibility to inform the office 01909 515117 of a telephone number for on the day of your hire that is always contactable.</li>
+        <li>Return Airport Collections: Clients must text /call the on call number 07787434262 to inform Manage My Fleet that the flight is delayed, If delayed and Manage My Fleet cannot cover the new times – the hirer accepts no refund can be given.</li>
+        <li>All wedding packages when requested may include Ribbons/Bows/Bubbly/Red Carpet – these items are complimentary and do not form part of the hire cost, we do our utmost to provide these but these cannot be guaranteed. Bookings taken from 01.07.11 have the choice of Ivory or White Ribbon/Bows only.<br>
+          Manage My Fleet Terms & conditions apply to all bookings made under MANAGE MY FLEET/Cupid Carriages/Chauffeur Driven Hire/Bentley&RollsRoyce Hire<br>
+          Manage My Fleet reserves the right to refuse or cancel any hire at any time</li>
+      </ol>
+
+
+      Website:&nbsp;<a href="http://www.americanpielimos.co.uk">www.managemyfleet.co.uk</a><br>
+      Email:&nbsp;<a href="mailto:info@americanpielimos.co.uk">info@managemyfleet.co.uk</a>
+      <p class="visa">Trip Numbers.....................Hirers Signature: ...............................................Date: .......................</p>
+      <p>
+      <h4 class="visa"> You Must confirm your booking back to us at Manage My Fleet by visiting <a href="http://www.managemyfleet.co.uk">www.managemyfleet.co.uk</a> & Completing the Boxes or
+        Please Print & Sign this email & Post back to Manage My Fleet UK Ltd at least 14 days Prior To Your Hire Date
+        Thank-you</h4>
+      </p>
+      <p>
+      <h5>MANAGE MY FLEET<br>
+        100A School Road <br>
+        Wales Bar <br>
+        Sheffield <br>
+        S26 5QJ <br>
+        Tel: 0800 0482298 </h5>
+      </p>
+    </div>
+    
+</div>
+</body>
+</html>

